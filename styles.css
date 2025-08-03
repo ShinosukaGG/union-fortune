@@ -232,7 +232,8 @@ button:hover, button:focus {
 .fortune-main {
   font-family: var(--font-heading);
   font-size: 1.23rem;
-  margin-bottom: 10px;
+  font-weight: 800;        /* THICKER */
+  margin-bottom: 22px;     /* MORE GAP BELOW */
   color: var(--secondary);
   text-align: center;
 }
@@ -243,7 +244,8 @@ button:hover, button:focus {
   color: #fff;
   font-family: var(--font-mono);
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 22px;        /* GAP ABOVE */
+  margin-bottom: 22px;     /* GAP BELOW */
 }
 
 .fortune-desc {
