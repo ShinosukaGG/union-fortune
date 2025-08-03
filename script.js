@@ -333,7 +333,7 @@ function showFortune() {
       `🤔 What could it mean?\nWen airdrop? Wen Lambo?\n` +
       `Try it yourself and share your destiny:\n\n` +
       `👉 union-fortune.vercel.app\n\n` +
-      `#Union #CryptoFortune #CapybaraMagic`;
+      `#Union #CryptoFortune #CapybaraMagic\n\nhttps://x.com/Shinosuka_eth/status/1951924136818942351`;
     const url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
     window.open(url, '_blank');
   };
