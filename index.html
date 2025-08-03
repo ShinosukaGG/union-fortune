@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Union Fortune Teller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/supermolot" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="union-logo.svg" alt="Union Logo" class="logo" />
+    <h1>Union Fortune Teller</h1>
+  </header>
+
+  <footer>
+    This fortune teller uses a globe bought for $5, it's up to you if you trust it
+  </footer>
+
+  <main>
+    <!-- Landing Box -->
+    <section id="landing" class="centerbox">
+      <img src="fortune1.png" alt="Capybara Globe" class="landing-img" />
+      <h2>Know Your Union Fortune</h2>
+      <p>
+        Enter your Twitter username and let the Union Fortune Teller reveal your crypto destiny.<br>
+        This isn’t financial advice—just capybara-powered fun.<br>
+        Will you become a meme lord, airdrop king, or legendary OG?<br>
+        Let’s see what fate has in store...
+      </p>
+      <div class="username-field">
+        <span>@</span>
+        <input type="text" id="username" placeholder="YourXUsername" autocomplete="off" maxlength="32" />
+      </div>
+      <button id="start-btn">Know Your Fortune</button>
+    </section>
+
+    <!-- Question Box -->
+    <section id="question" class="centerbox" style="display: none;">
+      <h2 id="q-title"></h2>
+      <form id="q-form"></form>
+      <button id="q-submit">Submit</button>
+    </section>
+
+    <!-- Fortune Box -->
+    <section id="fortune" class="centerbox" style="display: none;">
+      <img id="fortune-img" src="fortune2.png" alt="Capybara Fortune" />
+      <div class="fortune-main">Capybara thinks your fortune is...</div>
+      <div id="fortune-result" class="fortune-text"></div>
+      <div class="fortune-desc">
+        Your fortune is your future,<br>
+        but your future is in your hands.<br>
+        Contribute, build, and meme with Union—your luck starts now.
+      </div>
+      <button id="share-btn">Share Your Fortune on X</button>
+    </section>
+    <canvas id="confetti-canvas"></canvas>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
