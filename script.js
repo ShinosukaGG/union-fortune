@@ -293,7 +293,7 @@ qForm.addEventListener('change', function(e) {
 // ==== FORTUNE REVEAL ====
 
 function showFortune() {
-  fortuneImg.src = "capybara-fortune.png";
+  fortuneImg.src = "fortune2.png";
   fortuneImg.alt = "Capybara Fortune";
   fortuneBox.style.display = "flex";
   let idx = getFortuneIndex(username, answers, FORTUNES.length);
