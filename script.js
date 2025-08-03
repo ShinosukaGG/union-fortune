@@ -296,6 +296,31 @@ function showFortune() {
   fortuneImg.src = "fortune2.png";
   fortuneImg.alt = "Capybara Fortune";
   fortuneBox.style.display = "flex";
+  const lower = username.trim().toLowerCase();
+  if (
+    lower === "0xkaiserkarel" ||
+    lower === "corcoder" ||
+    lower === "e_beriker"
+  ) {
+    fortuneResult.textContent =
+      "You are part of the greatest team in the world, Union will succeed under your guidance";
+    setTimeout(confettiBurst, 150);
+
+    shareBtn.onclick = function() {
+      const text =
+        `🔮 Union Capybara Fortune Teller just revealed my fortune:\n\n` +
+        `"You are part of the greatest team in the world, Union will succeed under your guidance"\n\n` +
+        `🤔 What could it mean?\nWen airdrop? Wen Lambo?\n` +
+        `Try it yourself and share your destiny:\n\n` +
+        `👉 union-fortune.vercel.app\n\n` +
+        `#Union #CryptoFortune #CapybaraMagic`;
+      const url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
+      window.open(url, '_blank');
+    };
+    saveFortune(username, -1); // Special value for core team
+    return;
+  }
+
   let idx = getFortuneIndex(username, answers, FORTUNES.length);
   fortuneResult.textContent = FORTUNES[idx];
   saveFortune(username, idx);
@@ -312,4 +337,4 @@ function showFortune() {
     const url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
     window.open(url, '_blank');
   };
-       }
+}
